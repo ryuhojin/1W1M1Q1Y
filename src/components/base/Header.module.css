@@ -1,0 +1,19 @@
+.header {
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.header__nav {
+  margin: 0 auto;
+  padding: 0 12px;
+  max-width: 1200px;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__nav__title {
+  font-size: 18px;
+  font-weight: bold;
+}
+.header__nav__item {
+}
