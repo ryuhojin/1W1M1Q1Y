@@ -1,19 +1,20 @@
-.header {
+.container {
   border-bottom: 1px solid #f2f2f2;
 }
-
-.header__nav {
-  margin: 0 auto;
-  padding: 0 12px;
+.container a {
+  cursor: pointer;
+  text-decoration: none;
+}
+.wrapper {
   max-width: 1200px;
-  height: 80px;
+  padding: 0 24px;
+  margin: 0 auto;
+  height: 32px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 12px;
 }
-.header__nav__title {
-  font-size: 18px;
-  font-weight: bold;
-}
-.header__nav__item {
+.category a + a {
+  margin-left: 16px;
 }
