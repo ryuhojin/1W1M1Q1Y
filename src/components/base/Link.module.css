@@ -1,7 +1,10 @@
 .container {
   cursor: pointer;
+  text-decoration: none;
+  color: black;
+  white-space: nowrap;
 }
 
 .active {
-  color: red;
+  color: rgb(255, 126, 126);
 }

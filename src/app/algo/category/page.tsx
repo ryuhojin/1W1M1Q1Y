@@ -3,7 +3,7 @@ import SubTitle from "@/components/base/SubTitle";
 
 export default function Page() {
     return <Container>
-      <SubTitle>홈</SubTitle>
+      <SubTitle>카테고리</SubTitle>
     </Container>;
   }
   

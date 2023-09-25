@@ -1,16 +1,22 @@
+'use client'
+
+import useActiveURL from "@/libs/hooks/ui/useActiveURL";
 import styles from "./Link.module.css";
 import { FC } from "react";
+import Link from "next/link";
 
 interface Props {
   children: React.ReactNode;
   href: string;
 }
 
-const Link: FC<Props> = ({ children, href }) => {
+const WrapLink: FC<Props> = ({ children, href }) => {
+  const active = useActiveURL(href);
+
   return (
-    <a className={`${styles.container}`} href={href}>
+    <Link className={`${styles.container} ${active && styles[active]}`} href={href}>
       {children}
-    </a>
+    </Link>
   );
 };
-export default Link;
+export default WrapLink;
