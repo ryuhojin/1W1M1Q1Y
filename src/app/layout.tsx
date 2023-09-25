@@ -1,4 +1,6 @@
+import "./normalize.css";
 import "./globals.css";
+
 import Header from "@/components/base/Header";
 
 export const metadata = {

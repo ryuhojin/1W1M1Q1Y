@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import useActiveURL from "@/libs/hooks/ui/useActiveURL";
 import styles from "./Link.module.css";
@@ -14,7 +14,10 @@ const WrapLink: FC<Props> = ({ children, href }) => {
   const active = useActiveURL(href);
 
   return (
-    <Link className={`${styles.container} ${active && styles[active]}`} href={href}>
+    <Link
+      className={`${styles.container} ${active && styles[active]}`}
+      href={href}
+    >
       {children}
     </Link>
   );

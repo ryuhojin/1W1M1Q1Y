@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 12px;
+}
+
+.state {
+  margin-top: 4px;
+  font-size: 16px;
+  color: #98a8b9;
+}
